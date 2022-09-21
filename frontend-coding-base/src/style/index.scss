@@ -1,0 +1,45 @@
+@import "./components/reset.scss";
+@import "./components/heading.scss";
+@import "./components/scan_ticket.scss";
+@import "./components/ticket.scss";
+@import "./components/activity_log.scss";
+
+$sizes: (
+  "xxs": 4px,
+  "xs": 12px,
+  "sm": 16px,
+  "md": 24px,
+  "lg": 32px,
+  "xl": 48px,
+  "xxl": 64px,
+  "xxxl": 80px,
+);
+
+:root {
+  @each $size-name, $size-value in $sizes {
+    --spacing-#{$size-name}: #{$size-value};
+  }
+
+  --color-text-primary: #FFF;
+  --color-text-secondary: #000;
+  --color-background:#2F2852;
+  --color-border: #d8d2e766;
+
+  --size-safe-bottom: 0px;
+  --size-safe-bottom: max(env(safe-area-inset-bottom), 0px);
+  --size-safe-top: 0px;
+  --size-safe-top: max(env(safe-area-inset-top), 0px);
+  --size-text: 16px;
+
+  --font-text: Inter, sans-serif;
+
+  --z-slider: 20;
+  --z-popup: 80;
+  --z-menu: 90;
+  --z-context: 95;
+  --z-overlay: 95;
+  --z-modal: 100;
+  --z-sidebar: 105;
+  --z-notifications: 110;
+}
+

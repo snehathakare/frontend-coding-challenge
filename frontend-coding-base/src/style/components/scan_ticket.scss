@@ -1,0 +1,35 @@
+.scanner__off__scan__slider{
+    background: linear-gradient(90.37deg, #DD50AD 0.39%, #9E23FF 49.61%, #415BE6 96.81%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    margin:0 15px 16px 15px;
+    padding: 24px 0 24px 0;
+    color:(--color-text-primary);
+}
+.scanner__off__scan__ticket{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0 16px 0;
+}
+.scanner__off__scan__ticket--text{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3px 0 2px 0;
+    align-items: center;
+    background: #181831;
+    border-radius: 30px;
+    color:#9D9CDA;
+    width: 120px;
+    height: 20px;
+}
+.scanner__off__scan__ticket--round{
+    width: 16px;
+    height: 16px;
+    background: #181831;
+    border-radius: 8px;
+    transform: rotate(-180deg);
+    margin-left: 5px;
+}
+

@@ -1,0 +1,18 @@
+{
+  "name": "coding-base",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:nerdgeschoss/frontend-coding-base.git",
+  "author": "Jens Ravens <jens@nerdgeschoss.de>",
+  "license": "MIT",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "dependencies": {
+    "parcel": "^2.7.0"
+  },
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.7.0"
+  }
+}
