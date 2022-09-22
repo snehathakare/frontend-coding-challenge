@@ -23,10 +23,33 @@
     justify-content: center;
     background-color: #FFFFFF;
     border-radius: 10px;
-    width:330px;
+    width:306px;//reduce this
     left: 30px;
     top: 246px;
     margin:auto;
+   
+    &:before{
+        background: #fff;
+        border-radius:10px;
+        content: "";
+        height: 100%;
+        left: 12px;
+        position: absolute;
+        transform: rotate(180deg); 
+        -webkit-mask-image: radial-gradient(ellipse 12px 10px at 30px center, #0000 37px, #000 21px);
+        width: 29px;
+    }
+    &:after{
+        background: #fff;
+        border-radius:10px;
+        content: "";
+        height: 100%;
+        position: absolute;
+        right: 16px;
+        transform: rotate(0deg);
+        -webkit-mask-image: radial-gradient(ellipse 12px 10px at 30px center, #0000 37px, #000 21px);
+        width: 29px;
+    }
 }
 .scanner__off--checkin{
     display: flex;
@@ -63,6 +86,9 @@
 .scanner__off__checked__in--ticket__container{
     display: flex;
     align-items: center;
+    position: relative;
+    margin: 0 auto;
+    width: 360px;
 }
 .scanner__off--checkin--bold{
     color: #092578;
@@ -83,10 +109,4 @@
 }
 .scanner__off--checkout__btn__icon--img{
     padding: 13px 17px 13px 17px;
-}
-.half__circle{
-    width:15px;
-    height:15px;
-    border-radius:7px;
-    background-color:#FF9534;
 }
